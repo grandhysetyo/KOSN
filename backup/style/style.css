@@ -1,0 +1,83 @@
+.section1{     
+    height: 100%;
+    background: url('../assets/img/section1.png') no-repeat center center;    
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+}
+.txt-kompetisi {
+    width: 100%;
+}
+.txt-kompetisi img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {    
+    display: block;
+    max-width:20%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.section2 h4{
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
+.bidang {
+    display: block;
+    margin: auto;
+    width: max-content;
+}
+
+/* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .section1{ 
+        font-size: large;
+    }    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) HD */ 
+  @media only screen and (min-width: 992px) {    
+    .section1{         
+        font-size: large;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) HD */
+  @media only screen and (min-width: 1200px) {    
+    .section1{        
+        font-size: large;
+    }
+  }
+
+  /* Very Extra large devices (large laptops and desktops, 1920px and up) FHD */
+  @media only screen and (min-width: 1920px) {
+    .example {background:darkolivegreen;}
+    .section1{
+        font-size: x-large;
+    }
+    .txt-kompetisi img {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  }
