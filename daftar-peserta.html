@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-    <link rel="stylesheet" href="assets/css/login-register.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">    
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -40,22 +39,148 @@
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div class="pagination-top"><span class="pagination1">Beranda&nbsp;<i class="fa fa-chevron-right"></i></span><span class="pagination2">Status Data Saya</span></div>
-            <div>
-                <form>
-                    <h3>Pendaftaran Peserta</h3>
-                    <h5>Kompetisi Olahraga Siswa Nasional</h5>
-                    <div class="form-group"><span>Nama Lengkap</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>NISN</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>Tempat Lahir</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>Tanggal Lahir</span><input class="form-control" type="date"></div>
-                    <div class="form-group"><span>Jenis Kelamin</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>Alamat</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>Kabupaten</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>Kota</span><input class="form-control" type="text" name="nama"></div>
-                    <div class="form-group"><span>Provinsi</span><input class="form-control" type="text" name="nama"></div>
+            <div class="pagination-top"><span class="pagination1">Beranda&nbsp;<i class="fa fa-chevron-right"></i></span><span class="pagination2">Status Data Saya</span></div>            
+
+                <form class="" method="POST" target="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-pendaftaran">
+                                <h3>Pendaftaran Peserta</h3>
+                                <h5>Kompetisi Olahraga Siswa Nasional</h5>            
+                            </div>
+                        </div>
+                        <div class="row form-data-diri">
+                            <div class="col-md-12">
+                                <h6>Data Diri</h6>  
+                            </div>
+                            <div class="col-md-6">                                                      
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Nama Lengkap</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nama">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">NISN</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nisn">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Tempat Lahir</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nama">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Tanggal Lahir</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="date">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Jenis Kelamin</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option selected>Laki - Laki</option>
+                                            <option>Perempuan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Alamat</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nama">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Kabupaten</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option selected>Pilih Kabupaten/Kota</option>
+                                            <option>Banyuwangi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Provinsi</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option selected>Pilih Provinsi</option>
+                                            <option>Jawa Timur</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">No HP</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nama">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">                                                      
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Nama Ibu Kandung</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nama">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">No HP Orang Tua</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nisn">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Nama Akun Youtube</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" name="nama">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Ukuran Kaos</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option selected>Pilih Ukuran</option>
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Berat Badan</label>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">kg</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Tinggi Badan</label>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">cm</label>
+                                </div>                                                                
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Unggah Foto</label>
+                                    <div class="col-sm-8">
+                                        <input type="file" class="form-control-file">
+                                    </div>
+                                </div>                                
+                                <div class="form-group row">
+                                    <button class="btn btn-submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
-            </div>
+            
         </div>
     </div>
     <div class="row footer p-5">
