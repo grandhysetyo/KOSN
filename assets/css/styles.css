@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat';
 }
 
+/* Section 1 */
 .section1 {
   background: url('../../assets/img/bg-section1.png');
   background-position: center;
@@ -11,7 +12,7 @@ body {
 }
 
 .navbar-brand {
-  background-image: url("O2SN.png");
+  background-image: url("../../assets/img/logo-kosn.png");
   width: 150px;
   background-position: center;
   background-size: 50%;
@@ -20,118 +21,31 @@ body {
 }
 
 .navbar div ul li a {
-  font-family: 'Montserrat';
   color: #662D90;
   font-weight: 600;
 }
 
-.link-bg1 {
-  background-color: #90278E;
+.btn-daftar {
+  margin-left: 10px;
+  color: #fff;
+  background-color: #662d91;
 }
 
-.link-bg2 {
-  background-color: #FFDD15;
-}
-
-.link-bg3 {
-  background-color: #00ADEE;
-}
-
-.link-bg4 {
-  background-color: #73AD0E;
-}
-
-.section3 {
-  height: 580px;
-  background: url('section3.png') no-repeat center center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.section4 {
-  height: 100%;
-  background: url('section4.png') no-repeat center center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.kilas-balik {
-  display: block;
-  float: right;
+.txt-kompetisi {
   width: 100%;
-  height: 380px;
-  color: #fff;
-  font-size: x-large;
-  background-color: #FFD261;
-}
-
-.kilas-balik h2 {
   display: block;
-  padding: 30px 30px 0px 0px;
-  text-align: right;
-  color: #662D91;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 35pt;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section5 {
-  background-image: url("../../assets/img/bg-section5.png");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.pedoman-lomba {
-  display: block;
-  padding: 100px 0px 0px 100px;
-}
-
-.pedoman-lomba p {
-  color: #fff;
-  font-family: 'Montserrat';
-}
-
-.link-unduh {
-  padding: 10px 25px 10px 25px;
-  background-color: #fff;
-  text-decoration: none;
-  color: #1393C3;
-  border-radius: 12px;
-}
-
-.footer {
-  background-color: #000000;
-}
-
+/* Bidang */
 .sub-judul {
   display: block;
-  font-style: italic;
-  font-family: 'Montserrat';
+  font-weight: 400;
   color: #662D91;
   font-size: 20pt;
   margin-top: 50px;
-  margin-bottom: 2px;
-}
-
-.sub-judul2 {
-  display: block;
-  font-family: 'Montserrat';
-  color: #662D91;
-  font-size: 30pt;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.sub-judul3 {
-  display: block;
-  font-family: 'Montserrat';
-  color: #662D91;
-  font-size: 20pt;
-  margin-bottom: 2px;
-  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .garis-bawah {
@@ -157,10 +71,9 @@ body {
   width: 100%;
   display: block;
   text-align: center;
-  padding: 8% 15% 8% 15%;
+  padding: 5% 25%;
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat';
   font-style: italic;
   font-weight: 600;
 }
@@ -169,26 +82,82 @@ body {
   color: #000000;
 }
 
+.link-bg1 {
+  background-color: #90278E;
+}
+
+.link-bg2 {
+  background-color: #FFDD15;
+}
+
+.link-bg3 {
+  background-color: #00ADEE;
+}
+
+.link-bg4 {
+  background-color: #73AD0E;
+}
+
+/* Tentang Kosn & Kilas Balik */
+.section4 {
+  height: 100%;
+  background: url('section4.png') no-repeat center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-judul2 {
+  display: block;
+  color: #662D91;
+  font-size: 30pt;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-judul3 {
+  display: block;
+  color: #662D91;
+  font-size: 20pt;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.line-ver {
+  border-right: 2px #90278E solid;
+}
+
+.txt-p a{
+  display: block;
+  text-align: end;
+  text-decoration: underline;
+  margin-top: 40px;
+
+}
+.kilas-balik {
+  display: block;
+  float: right;
+  width: 100%;
+  height: 380px;
+  color: #fff;
+  font-size: x-large;
+  background-color: #FFD261;
+}
+
+.kilas-balik h2 {
+  display: block;
+  padding: 30px 30px 0px 0px;
+  text-align: right;
+  color: #662D91;
+  font-weight: 700;
+  font-size: 35pt;
+}
+
 .bg-kilasbalik {
   width: 100%;
   background-image: url("../../assets/img/bg-section4.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.txt-kompetisi {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.txt-p {
-  font-family: 'Montserrat';
-}
-
-.line-ver {
-  border-right: 2px #90278E solid;
 }
 
 .garis-bawah2 {
@@ -199,19 +168,43 @@ body {
 .vid-kopsi {
   margin: auto;
   margin-top: 50px;
-  width: 500px;
-  height: 300px;
+  margin-bottom: 50px;
+  width: 40%;
+  height: 80%;
   background-color: #ededed;
 }
 
+.vid-kopsi iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* Penutupan */
+.section5 {
+  background-image: url("../../assets/img/bg-section5.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .sub-judul4 {
-  font-family: 'Montserrat';
   color: #662D91;
   font-size: 25pt;
-  margin-top: 200px;
+  margin-top: 25%;
   margin-bottom: 2px;
   font-weight: 700;
   padding-bottom: 20px;
+}
+
+.pesilat-penutupan {
+  display: block;
+  width: 300px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.penutupan{
+  padding: 7% 12%;
 }
 
 .time-count {
@@ -223,68 +216,81 @@ body {
 .rectangle-time {
   background-color: #662D91;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 130px;
   height: 130px;
+  padding: 2% 16%;
 }
 
 .rectangle-time span {
   display: block;
   color: #fff;
-  font-family: 'Montserrat';
   font-size: 80px;
   font-weight: 600;
 }
 
 .time-title {
   display: block;
-  font-family: 'Montserrat';
   text-align: center;
   font-weight: 500;
   font-size: 35px;
   color: #000000;
 }
 
+
+/* Pedoman Lomba */
 .section6 {
   background-color: #73AD0E;
 }
-
-.pesilat-penutupan {
-  display: block;
-  width: 300px;
-  margin: auto;
-  margin-top: 70px;
-}
-
 .sub-judul5 {
-  font-family: 'Montserrat';
   color: #ffffff;
   font-weight: 700;
   font-size: 23pt;
 }
+.pedoman-lomba {
+  display: block;
+  padding: 14% 22%;
+}
+
+.pedoman-lomba p {
+  color: #fff;
+}
 
 .img-pedoman {
   display: block;
-  width: 500px;
+  width: 75%;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
+.link-unduh {
+  padding: 10px 25px 10px 25px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #1393C3;
+  border-radius: 12px;
+}
+
+/* Pengumuman */
+.section7 {
+  background-image: url("../../assets/img/bg-section7.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
 .sub-judul6 {
   display: block;
-  width: 70%;
-  font-family: 'Montserrat';
   font-weight: 800;
   margin: auto;
-  margin-top: 50px;
-  padding: 10px 0px 0px 99px;
+  padding:14% 22%;
 }
 
 .list-pengumuman {
   margin-top: 10px;
   padding: 50px 100px 0px 5px;
   list-style-type: decimal-leading-zero;
-  font-family: 'Montserrat';
   font-weight: 400;
 }
 
@@ -294,19 +300,73 @@ body {
 }
 
 .selengkapnya {
-  font-family: 'Montserrat';
   color: #000;
 }
 
-.section7 {
-  background-image: url("../../assets/img/bg-section7.png");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* Gallery */
+.sub-judul7 {
+  font-size: 25pt;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section8 {
+  background-color: #662d91;
+}
+.carousel {
+  width: 70%;  
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
 }
 
 .link-footer {
-  font-family: 'Montserrat';
   color: #fff;
 }
 
@@ -317,15 +377,16 @@ body {
 }
 
 .logo-footer {
+  text-align: center;
 }
 
-.logo-footer img {
-  margin: auto;
-  width: 90%;
+.logo-footer img {  
+  width: 380px;
 }
 
 .sosmed {
-  padding: 50px 0px 0px 200px;
+  padding: 3% 28%;
+  text-align: center;
 }
 
 .sosmed a {
@@ -340,22 +401,139 @@ body {
   border: solid 2px;
 }
 
-.sub-judul7 {
-  font-family: 'Montserrat';
-  font-size: 25pt;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  margin-top: 50px;
+/* TO UP Button */
+#btn-toUp {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#662D91;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
 
-.section8 {
-  background-color: #662d91;
+#btn-toUp:hover {
+  background-color: #555;
 }
 
-.btn-daftar {
-  margin-left: 10px;
-  color: #fff;
-  background-color: #662d91;
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+      width: 100px;
+    }
+    .tentang {
+      margin: 0;
+    }
+    .line-ver{
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .text-justify{
+      text-align: left!important;
+    }
+    .list-pengumuman {
+      padding: 0;
+    }
+    .kilas-balik {
+      height: 150px;
+    }
+    .kilas-balik h2{
+      padding: 30px 50px;
+    }
+    .img-pedoman{
+      margin: auto;
+      margin-top: 0px; 
+      margin-bottom: 50px;     
+    }
+    .penutupan{
+      padding: 2% 18%;
+    }
+    .sub-judul4{
+      font-size: 20pt;
+      
+    }
+    .time-count{
+      margin-bottom: 40px;
+    }
+    .rectangle-time {
+      width: 100px;
+      height: 100px;
+    }
+    .rectangle-time span{
+      font-size: 60px;
+    }
+    .time-title{
+      font-size: 20px;
+    }
+    .sub-judul6{
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .vid-kopsi {
+      width: 90%;
+      height: 70%;
+    }
+    .logo-footer img {  
+      width: 280px;
+    }
+    .sosmed{
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 0;
+
+    }
+    .carousel {
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) HD */ 
+@media only screen and (min-width: 992px) {    
+  .vid-kopsi {
+    width: 50%;
+    height: 80%;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) HD */
+@media only screen and (min-width: 1200px) {    
+  
+}
+
+/* Very Extra large devices (large laptops and desktops, 1920px and up) FHD */
+@media only screen and (min-width: 1920px) {
+  .navbar-nav{
+    font-size: large;
+  }
+  .bdg-kompetisi a {
+    padding: 5% 28%;
+  }
+  .penutupan{
+    padding: 2% 16%;
+  }
+  .sub-judul6{
+    padding: 14% 25%;
+  }
+}
+
+
 
