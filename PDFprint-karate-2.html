@@ -21,13 +21,14 @@
                 display: block;
                 height: 420px;
                 width: 298px;
-                background-image:url("assets/img/idcard-01.png") ;
+                background-image:url("assets/img/IDCard-Karate-2.png") ;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
             .data-peserta{
                 position: relative;            
-                top: 232px;
+                top: 215px;
+                left: -20px;
                 display: inline-block;
             }
             .data-peserta span{
@@ -37,11 +38,11 @@
             }
             .foto-id{
                 position: relative;
-                top: 96px;
-                left: 87px;
+                top: 95px;
+                left: 73px;
                 display: inline-block;
-                width: 125px;
-                height: 125px;
+                width: 145px;
+                height: 145px;
                 border-radius: 50%;
             }
         </style>
@@ -53,7 +54,7 @@
             
             <div class="bg-id-card">
                 <img class="foto-id" src="assets/img/foto-id-card.jpg" alt="" />
-                <div class="data-peserta">
+                <div class="data-peserta">                    
                     <span id="nama">Grandhys</span> 
                     <span id="sekolah">SMK Telkom</span>
                     <span id="cab">Tunggal Silat</span>
@@ -72,14 +73,10 @@
             $('#simpan').click(function(){
                 var element = document.getElementById('id-card');
                 var opt = {                
-                filename:     'myfile.pdf',
-                image:        { type: 'jpeg', quality: 1 },
-                html2canvas:  { scale: 2 },
-                jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
+                    filename:     'idCard-Karate-1.pdf'                    
                 };
-
                 // New Promise-based usage:
-                html2pdf().from(element).save();
+                html2pdf().set(opt).from(element).save();
                 
             });
         });

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>KOSN</title>
+
+        <style>
+            .uploadcare--jcrop-holder>div>div, #preview {
+                border-radius: 50%;
+                border:solid 1px #eaeaea;
+            }
+            .id-card-print{
+                display: block;
+                height: 450px;
+                width: 300px;
+                margin: auto;                
+            }
+            /* ID CARD Ukuran A6 */
+            .bg-id-card{
+                display: block;
+                height: 420px;
+                width: 298px;
+                background-image:url("assets/img/IDCard-Silat-2.png") ;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .data-peserta{
+                position: relative;            
+                top: 238px;
+                display: inline-block;
+            }
+            .data-peserta span{
+                font-size: small;
+                margin-bottom: 5px; 
+                display: block;                                               
+            }
+            .foto-id{
+                position: relative;
+                top: 73px;
+                left: 87px;
+                display: inline-block;
+                width: 126px;
+                height: 126px;
+                border-radius: 50%;
+            }
+        </style>
+        
+    </head>
+    <body>        
+        <div id="id-card" class="id-card-print">
+            <span>ID Card Peserta</span>
+            
+            <div class="bg-id-card">
+                <img class="foto-id" src="assets/img/foto-id-card.jpg" alt="" />
+                <div class="data-peserta">                    
+                    <span id="nama">Grandhys</span> 
+                    <span id="sekolah">SMK Telkom</span>
+                    <span id="cab">Tunggal Silat</span>
+                    <span id="prov">Jawa Timur</span>
+                </div>
+            </div>
+        </div>
+        
+        <button id="simpan" style="display:block;margin: auto;">Simpan PDF</button>
+    </body>
+    
+    <script src="assets/js/jquery.min.js"></script>            
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {            
+            $('#simpan').click(function(){
+                var element = document.getElementById('id-card');
+                var opt = {                
+                    filename:     'idCard-Karate-1.pdf'                    
+                };
+                // New Promise-based usage:
+                html2pdf().set(opt).from(element).save();
+                
+            });
+        });
+    </script>
+</html>
