@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>KOSN</title>
+
+        <style>
+            .uploadcare--jcrop-holder>div>div, #preview {
+                border-radius: 50%;
+            }
+            .id-card-print{
+                display: block;
+                height: 450px;
+                width: 300px;
+                margin: auto;                
+            }
+            /* Ukuran A6 */
+            .bg-id-card{
+                display: block;
+                height: 420px;
+                width: 298px;
+                background-image:url("assets/img/idcard-01.png") ;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .data-peserta{
+                position: relative;            
+                top: 232px;
+                display: inline-block;
+            }
+            .data-peserta span{
+                font-size: small;
+                margin-bottom: 5px; 
+                display: block;                                               
+            }
+            .foto-id{
+                position: relative;
+                top: 96px;
+                left: 87px;
+                display: inline-block;
+                width: 125px;
+                height: 125px;
+                border-radius: 50%;
+            }
+        </style>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script> -->
+    </head>
+    <body>
+        <!-- <input type="hidden" role="uploadcare-uploader" data-crop="1:1" data-images-only > -->
+        <div id="id-card" class="id-card-print">
+            <span>ID Card Peserta</span>
+            
+            <div class="bg-id-card">
+                <img class="foto-id" src="assets/img/foto-id-card.jpg" alt="" id="preview" />
+                <div class="data-peserta">
+                    <span id="nama">Grandhys</span> 
+                    <span id="sekolah">SMK Telkom</span>
+                    <span id="cab">Tunggal Silat</span>
+                    <span id="prov">Jawa Timur</span>
+                </div>
+            </div>
+        </div>
+        
+        <button id="simpan" class="btn btn-submit">Simpan PDF</button>
+        <!-- <button id="simpan2">Simpan 2</button>
+        <button id="simpan3">Simpan 3</button>
+        <div class="elementH"></div> -->
+    </body>
+    <script>
+        UPLOADCARE_PUBLIC_KEY = "demopublickey";
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>        
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // // Getting an instance of the widget.
+            // const widget = uploadcare.Widget('[role=uploadcare-uploader]');
+            // // Selecting an image to be replaced with the uploaded one.
+            // const preview = document.getElementById('preview');
+            // // "onUploadComplete" lets you get file info once it has been uploaded.
+            // // "cdnUrl" holds a URL of the uploaded file: to replace a preview with.
+            // widget.onUploadComplete(fileInfo => {
+            //     preview.src = fileInfo.cdnUrl;
+            // });
+            // $('#simpan3').click(function(){
+            //     var xhr = new XMLHttpRequest();
+            //     xhr.open("GET", preview.src, true);
+            //     xhr.responseType = "blob";
+            //     xhr.onload = function(){
+            //         var urlCreator = window.URL || window.webkitURL;
+            //         var imageUrl = urlCreator.createObjectURL(this.response);
+            //         var tag = document.createElement('a');
+            //         tag.href = imageUrl;
+            //         tag.download = "foto-id.jpg";
+            //         document.body.appendChild(tag);
+            //         tag.click();
+            //         document.body.removeChild(tag);
+            //     }
+            //     xhr.send();
+            // });
+            // $('#simpan2').click(function(){
+            //     var doc = new jsPDF();
+            //     var elementHTML = $('#id-card').html();
+            //     var specialElementHandlers = {
+            //         '#elementH': function (element, renderer) {
+            //             return true;
+            //         }
+            //     };
+            //     doc.fromHTML(elementHTML, 15, 15, {
+            //         'width': 170,
+            //         'elementHandlers': specialElementHandlers
+            //     });
+                
+            //     // Save the PDF
+            //     doc.save('sample-document.pdf');
+                
+            // });
+
+            $('#simpan').click(function(){
+                var element = document.getElementById('id-card');
+                var opt = {                
+                filename:     'myfile.pdf',
+                image:        { type: 'jpeg', quality: 1 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
+                };
+
+                // New Promise-based usage:
+                html2pdf().from(element).save();
+                
+            });
+        });
+    </script>
+</html>
