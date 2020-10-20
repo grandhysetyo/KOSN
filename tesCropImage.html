@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>KOSN</title>
+        <style>
+            .foto-id{
+                position: relative;
+                top: 96px;
+                left: 87px;
+                display: inline-block;
+                width: 125px;
+                height: 125px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: block;">
+            <span>Upload + Crop Image :</span>
+            <input type="hidden" role="uploadcare-uploader" data-crop="1:1" data-images-only >            
+            <img class="foto-id" src="assets/img/user.png" alt="" id="preview" />
+        </div>
+        <script>
+            UPLOADCARE_PUBLIC_KEY = "demopublickey";
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script> 
+        <script>
+            $(document).ready(function() {
+                // Getting an instance of the widget.
+                const widget = uploadcare.Widget('[role=uploadcare-uploader]');
+                // Selecting an image to be replaced with the uploaded one.
+                const preview = document.getElementById('preview');
+                // "onUploadComplete" lets you get file info once it has been uploaded.
+                // "cdnUrl" holds a URL of the uploaded file: to replace a preview with.
+                widget.onUploadComplete(fileInfo => {
+                    preview.src = fileInfo.cdnUrl;
+                });
+            });
+        </script>
+    </body>
+</html>
