@@ -2,10 +2,42 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat';
 }
+.navbar-light .navbar-nav .nav-link {
+  color: #73AD0E;
+}
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #73AD0E;
+}
+.nav-item {
+  margin-right: 10px;
+}
+.txt-judul {
+  margin-top: 120px;
+  margin-bottom: 23px;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.txt-judul h1 {
+  font-weight: 800;
+  color: #00ADEE;
+}
+
+.txt-judul span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #73AD0E;
+}
+
+.txt-siaran p {
+  font-size: 12px;
+}
 /* Section 1 */
 .section1 {
-  background: url('../../assets/img/bg-section1.png');
+  margin-top: 100px;
+  background: url('../../assets/img/bg-section1-green.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +76,7 @@ body {
   display: block;
   font-weight: 400;
   color: #662D91;
-  font-size: 20pt;
+  font-size: 24pt;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -69,10 +101,10 @@ body {
 .bdg-kompetisi a {
   position: absolute;
   top: 80%;
-  width: 100%;
+  width: 307px;
   display: block;
   text-align: center;
-  padding: 5% 25%;
+  padding: 5% 15%;
   color: #fff;
   text-decoration: none;
   font-style: italic;
@@ -110,22 +142,22 @@ body {
 
 .sub-judul2 {
   display: block;
-  color: #662D91;
+  color: #00ADEE;
   font-size: 30pt;
-  margin-top: 25px;
+  margin-top: 100px;
   margin-bottom: 25px;
 }
 
 .sub-judul3 {
   display: block;
-  color: #662D91;
+  color: #73AD0E;
   font-size: 20pt;
   margin-bottom: 2px;
   font-weight: 600;
 }
 
 .line-ver {
-  border-right: 2px #90278E solid;
+  border-right: 2px #00ADEE solid;
 }
 
 .txt-p a{
@@ -142,21 +174,21 @@ body {
   height: 380px;
   color: #fff;
   font-size: x-large;
-  background-color: #FFD261;
+  background-color: #73AD0E;
 }
 
 .kilas-balik h2 {
   display: block;
   padding: 30px 30px 0px 0px;
   text-align: right;
-  color: #662D91;
+  color: #fff;
   font-weight: 700;
   font-size: 35pt;
 }
 
 .bg-kilasbalik {
   width: 100%;
-  background-image: url("../../assets/img/bg-section4.png");
+  background-image: url("../../assets/img/bg-section4-01.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -215,7 +247,7 @@ body {
 }
 
 .rectangle-time {
-  background-color: #662D91;
+  background-color: #73AD0E;
   display: inline-block;
   border-radius: 30px;
   width: 130px;
@@ -263,22 +295,22 @@ body {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-
-.link-unduh {
-  padding: 10px 25px 10px 25px;
-  background-color: #fff;
-  text-decoration: none;
-  color: #1393C3;
-  border-radius: 12px;
+.link-unduh li {
+  color: #fff;
+  margin: 10px;
+}
+.link-unduh li a{
+  color: #ffffff;
+  text-decoration: underline;  
 }
 
 /* Pengumuman */
 .section7 {
-  background-image: url("../../assets/img/bg-section7.png");
+  background-image: url("../../assets/img/bg-section7-01.png");
   background-position: bottom;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 585px;
 }
 
 .sub-judul6 {
@@ -286,6 +318,20 @@ body {
   font-weight: 800;
   margin: auto;
   padding:14% 22%;
+}
+
+.box-pengumuman a {
+  display: block;
+  background-color: #f2f7ff;
+  padding: 20px;
+  color: #333333;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.box-pengumuman a:hover {
+  text-decoration: none;
+  background-color: #f3fff0;
 }
 
 .list-pengumuman {
@@ -314,7 +360,7 @@ body {
 }
 
 .section8 {
-  background-color: #662d91;
+  background-color: #00ADEE;
 }
 .carousel {
   width: 70%;  
@@ -412,7 +458,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color:#662D91;
+  background-color:#73AD0E;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -456,6 +502,21 @@ body {
 @media only screen and (max-width: 600px) {
     .navbar-brand {
       width: 100px;
+    }
+    .bdg-kompetisi a {
+      width: 330px;
+    }
+    .section1 {
+      margin-top: 110px;
+    }
+    .txt-judul {
+      margin-top: 20px;
+    }
+    .txt-judul h1 {
+      font-size: 30px;
+    }
+    .sub-judul2 {
+      font-size: 30px;
     }
     .tentang {
       margin: 0;
@@ -562,6 +623,9 @@ body {
   }
   .sub-judul6{
     padding: 14% 25%;
+  }
+  .bdg-kompetisi a {
+    width: 446px;
   }
 }
 

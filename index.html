@@ -9,35 +9,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">    
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/perlombaan.css">
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row section1">
             <div class="col-md-12 col-lg-12 col-xl-12">
-                <nav class="navbar navbar-light navbar-expand-md">
-                    <div class="container"><a class="navbar-brand" href="#" ></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#" style="background-image: url(&quot;assets/img/logo-kosn.png&quot;); margin-left: 4%;"></a>
+                        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
                         <div class="collapse navbar-collapse" id="navcol-2">
                             <ul class="nav navbar-nav mx-auto">
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#bidang">KOMPETISI</a></li>
+                                <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="#">BERANDA</a></li> -->
+                                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link active" data-toggle="dropdown" aria-expanded="false" href="#">KOMPETISI</a>
+                                    <div class="dropdown-menu" role="menu">
+                                        <a class="dropdown-item" role="presentation" href="kompetisi-karate.html">Karate</a>
+                                        <a class="dropdown-item" role="presentation" href="kompetisi-silat.html">Pencak Silat</a>                                        
+                                    </div>
+                                </li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tentang">TENTANG</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#pengumuman">PENGUMUMAN</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#gallery">GALLERY</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">FAQ</a></li>
-                            </ul><span class="navbar-text actions"><a href="#">MASUK</a><button class="btn btn-daftar" type="button">DAFTAR</button></span>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#pengumuman">PENGUMUMAN</a></li>                                
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#galeri">GALERI</a></li>
+                                <li class="nav-item" role="presentation">                                    
+                                    <a class="nav-link live-stream" href="perlombaan.html"><i class="fa fa-circle" style="color: red;"></i> PERLOMBAAN    </a>
+                                </li>
+
+                            </ul>
+                            <span class="navbar-text actions">
+                                <a href="https://kosn.pusatprestasinasional.kemdikbud.go.id/login">MASUK</a>
+                                <a class="btn btn-daftar" href="https://kosn.pusatprestasinasional.kemdikbud.go.id/register">DAFTAR</a>
+                            </span>
                         </div>
                     </div>
                 </nav>
             </div>
             <div class="col-auto">
-                <img class="txt-kompetisi" src="assets/img/txt-kompetisi-02.png">
+                <img class="txt-kompetisi" src="assets/img/txt-kompetisi-01.png">
             </div>
         </div>
         <!-- BIDANG -->
-        <div id="bidang" class="row section2 no-gutters">
+        <div id="bidang" class="row section2">
             <div class="col-12">
-                <h1 class="text-center sub-judul">BIDANG<strong>&nbsp;KOMPETISI</strong></h1>
-                <!-- <div class="garis-bawah"></div> -->
+                <div class="txt-judul" style="font-weight: 600!important;">
+                    <h1><strong>BIDANG</strong> KOMPETISI</h1><span>Kompetisi Olahraga Siswa Nasional&nbsp;</span>
+                </div>
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
                 <div class="bdg-kompetisi"><img src="assets/img/kompetisi-1.png"><a class="link-bg1" href="#">KOMPETISI KARATE PUTRI</a></div>
@@ -94,7 +112,8 @@
             <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5"><img class="pesilat-penutupan" src="assets/img/pesilat2-penutupan.png"></div>
             <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
                 <div class="penutupan">
-                    <h1 class="sub-judul4">PENUTUPAN PENDAFTARAN DAN UNGGAH DOKUMEN</h1>
+                    <!-- <h1 class="sub-judul4">PENUTUPAN PENDAFTARAN DAN UNGGAH DOKUMEN</h1> -->
+                    <h1 class="sub-judul4" style="color: red;">PENDAFTARAN TELAH DITUTUP</h1>
                     <div class="time-count">
                         <div class="rectangle-time"><span id="days">20</span></div><span class="time-title">Hari</span></div>
                     <div class="time-count">
@@ -111,26 +130,41 @@
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <div class="pedoman-lomba">
                     <h1 class="sub-judul5">Pedoman Perlombaan KOSN2020</h1>
-                    <p><br>Silakan unduh pedoman<br>perlombaan kompetisi Olahraga<br>Siswa Nasional 2020<br><br></p><a class="link-unduh" href="#">Unduh</a></div>
+                    <p>
+                        <br>Silakan unduh pedoman<br>perlombaan kompetisi Olahraga<br>Siswa Nasional 2020<br></p>                    
+                    <ul class="link-unduh">
+                        <li><a href="#">Pedoman KOSN SMA</a></li>
+                        <li><a href="#">Pedoman KOSN SMK</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><img class="img-pedoman" src="assets/img/pedoman-lomba-img.png"></div>
         </div>
         <!-- PENGUMUMAN -->
-        <div id="pengumuman" class="row section7 p-5">
-            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                <h2 class="sub-judul6">Pengumuman Terbaru</h2>
+        <div id="pengumuman" class="row section7">
+            <div class="col-12">
+                <div class="txt-judul" style="font-weight: 600!important;">
+                    <h1>PENGUMUMAN TERBARU</h1><span>Kompetisi Olahraga Siswa Nasional&nbsp;</span>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-7 col-lg-7 col-xl-6">
-                <ul class="list-pengumuman text-justify">
-                    <li>FIKSI 2020 berupaya menekankan pada Bidang Rintisan, yaitu bidang usaha yang telah menghasilkan produk, sebagai lanjutan dari tahap konsep atau gagasan. <br></li>
-                    <li>Telah terkumpul sebanyak 659 rencana bisnis yang diunggah ke laman sma.<br></li>
-                    <li>Kami mohon perkenan Bapak/Ibu untuk mendampingi, dan memberikan izin para siswa yang telah menjadi finalis untuk dapat mempersiapkan diri.<br></li>
-                </ul><a class="selengkapnya" style="text-decoration: underline;" href="#">SELENGKAPNYA<i class="fa fa-long-arrow-right"></i></a></div>
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-pengumuman" style="margin-bottom: 100px;">
+                                <a  href="#">01. Lorem ipsum dolor set amet ipsum</a>
+                                <a  href="#">02. Lorem ipsum dolor set amet ipsum</a>
+                                <a  href="#">03. Lorem ipsum dolor set amet ipsum</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- GALLERY -->
-        <div id="gallery" class="row section8">
+        <div id="galeri" class="row section8">
             <div class="col-md-12">
-                <h1 class="sub-judul7">Gallery</h1>
+                <h1 class="sub-judul7">Galeri</h1>
             </div>
             <div class="col-md-12">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -142,53 +176,53 @@
                       <div class="carousel-item active">
                         <div class="d-none d-lg-block">
                           <div class="slide-box">
-                            <img src="https://picsum.photos/285/200/?image=0&random" alt="First slide">
-                            <img src="https://picsum.photos/285/200/?image=1&random" alt="First slide">
-                            <img src="https://picsum.photos/285/200/?image=2&random" alt="First slide">
-                            <img src="https://picsum.photos/285/200/?image=3&random" alt="First slide">
+                            <img src="assets/img/galeri/1.jpeg" alt="First slide">
+                            <img src="assets/img/galeri/2.jpeg" alt="First slide">
+                            <img src="assets/img/galeri/3.jpeg" alt="First slide">
+                            <img src="assets/img/galeri/4.jpeg" alt="First slide">
                           </div>
                         </div>
                         <div class="d-none d-md-block d-lg-none">
                           <div class="slide-box">
-                            <img src="https://picsum.photos/240/200/?image=0&random" alt="First slide">
-                            <img src="https://picsum.photos/240/200/?image=1&random" alt="First slide">
-                            <img src="https://picsum.photos/240/200/?image=2&random" alt="First slide">
+                            <img src="assets/img/galeri/1.jpeg" alt="First slide">
+                            <img src="assets/img/galeri/2.jpeg" alt="First slide">
+                            <img src="assets/img/galeri/3.jpeg" alt="First slide">
                           </div>
                         </div>
                         <div class="d-none d-sm-block d-md-none">
                           <div class="slide-box">
-                            <img src="https://picsum.photos/270/200/?image=0&random" alt="First slide">
-                            <img src="https://picsum.photos/270/200/?image=1&random" alt="First slide">
+                            <img src="assets/img/galeri/1.jpeg" alt="First slide">
+                            <img src="assets/img/galeri/2.jpeg" alt="First slide">
                           </div>
                         </div>
                         <div class="d-block d-sm-none">
-                          <img class="d-block w-100" src="https://picsum.photos/600/400/?image=0&random" alt="First slide">
+                          <img class="d-block w-100" src="assets/img/galeri/1.jpeg" alt="First slide">
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div class="d-none d-lg-block">
                           <div class="slide-box">
-                            <img src="https://picsum.photos/285/200/?image=4&random" alt="Second slide">
-                            <img src="https://picsum.photos/285/200/?image=5&random" alt="Second slide">
-                            <img src="https://picsum.photos/285/200/?image=6&random" alt="Second slide">
-                            <img src="https://picsum.photos/285/200/?image=7&random" alt="Second slide">
+                            <img src="assets/img/galeri/5.jpeg" alt="Second slide">
+                            <img src="assets/img/galeri/6.jpeg" alt="Second slide">
+                            <img src="assets/img/galeri/7.jpeg" alt="Second slide">
+                            <img src="assets/img/galeri/8.jpeg" alt="Second slide">
                           </div>
                         </div>
                         <div class="d-none d-md-block d-lg-none">
                           <div class="slide-box">
-                            <img src="https://picsum.photos/240/200/?image=3&random" alt="Second slide">
-                            <img src="https://picsum.photos/240/200/?image=4&random" alt="Second slide">
-                            <img src="https://picsum.photos/240/200/?image=5&random" alt="Second slide">
+                            <img src="assets/img/galeri/5.jpeg" alt="Second slide">
+                            <img src="assets/img/galeri/6.jpeg" alt="Second slide">
+                            <img src="assets/img/galeri/7.jpeg" alt="Second slide">
                           </div>
                         </div>
                         <div class="d-none d-sm-block d-md-none">
                           <div class="slide-box">
-                            <img src="https://picsum.photos/270/200/?image=2&random" alt="Second slide">
-                            <img src="https://picsum.photos/270/200/?image=3&random" alt="Second slide">
+                            <img src="assets/img/galeri/5.jpeg" alt="Second slide">
+                            <img src="assets/img/galeri/6.jpeg" alt="Second slide">
                           </div>
                         </div>
                         <div class="d-block d-sm-none">
-                          <img class="d-block w-100" src="https://picsum.photos/600/400/?image=1&random" alt="Second slide">
+                          <img class="d-block w-100" src="assets/img/galeri/5.jpeg" alt="Second slide">
                         </div>
                       </div>
                     </div>
@@ -272,7 +306,7 @@
         });
 
         // Set the date we're counting down to
-        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+        var countDownDate = new Date("Nov 11, 2020 10:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
